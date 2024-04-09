@@ -163,7 +163,7 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Polymorphic Ed.</a>
+          <a class="navbar-brand" href="index.html">Polymorphic Ed.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -172,8 +172,14 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="aboutos.html">About Outbreak Simulator</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="download.html">Download</a>
@@ -185,7 +191,7 @@
                 <a class="nav-link" href="people.html">People</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -208,7 +214,7 @@
             <img class ="d-block w-100" src="img/Flights.png" alt="Screenshot of Outbreak Simulator showing various flight paths across the continental United States">
             <div class="container">
               <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-secondary" href="about.html#AboutOS">How do flights impact disease spread?</a></p>
+                <p><a class="btn btn-lg btn-secondary" href="aboutos.html">How do flights impact disease spread?</a></p>
               </div>
             </div>
           </div>
@@ -217,7 +223,7 @@
             <img class ="d-block w-100" src="img/GameModel.png" alt="Screenshot of the Outbreak Simulator set-up step that shows the epidemiological compartment model">
             <div class="container">
               <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-secondary" href="about.html#AboutOS">How do compartment models work?</a></p>
+                <p><a class="btn btn-lg btn-secondary" href="aboutos.html">How do compartment models work?</a></p>
               </div>
             </div>
           </div>
@@ -226,7 +232,7 @@
             <img class ="d-block w-100" src="img/Infection.png" alt="Screenshot of Outbreak Simulator showing the most populated areas of the continental United States being infected">
             <div class="container">
               <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-secondary" href="about.html#AboutOS">How do we learn about the virulence of a disease?</a></p>
+                <p><a class="btn btn-lg btn-secondary" href="aboutos.html">How do we learn about the virulence of a disease?</a></p>
               </div>
             </div>
           </div>
@@ -247,7 +253,7 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-1">
             <h2 class="featurette-heading fw-normal lh-1">Creating Digital Experiences</h2>
-            <p class="lead">Polymorphic Games is an experimental video game development studio based at the University of Idaho. We develop video games, interactive simulations, and visualizations that feature STEM concepts as core mechanics. <a href="about.html#AboutUs">Learn more about our studio here.</a></p>
+            <p class="lead">Polymorphic Games is an interdisciplinary video game development studio based at the University of Idaho. We develop video games, interactive simulations, and visualizations that feature STEM concepts as core mechanics. <a href="about.html">Learn more about our studio here.</a></p>
           </div>
           <div class="col-md-5 order-md-2">
             <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/Polymorphic_1.png">
@@ -258,7 +264,7 @@
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
               <h2 class="featurette-heading fw-normal center-block">Outbreak Simulator</h2>
-              <p class="lead">Outbreak Simulator is a tool that allows users to simulate the spread of an infectious disease and explore the impact of different interventions. The simulation can be used to promote systems thinking and data science literacy, as users can see how different factors interact to influence the spread of the disease and how data can be used to track, visualize, and understand the outbreak. Outbreak Simulator can be used in educational, research, and public health settings to help people gain a better understanding of infectious disease dynamics and the role of data in outbreak response. <a href="about.html#AboutOS">Learn more about Outbreak Simulator here.</a></p>
+              <p class="lead">Outbreak Simulator is a tool that allows users to simulate the spread of an infectious disease and explore the impact of different disease parameters and interventions. The simulation can be used to promote systems thinking and data science literacy, as users can see how different factors interact to influence the spread of the disease and how data can be used to track, visualize, and understand the outbreak. Outbreak Simulator can be used in educational, research, and public health settings to help people gain a better understanding of infectious disease dynamics and the role of data in managing an outbreak. <a href="aboutos.html">Learn more about Outbreak Simulator here.</a></p>
             </div>
             <div class="col-md-5 order-md-1">
               <img class="featurette-image img-fluid mx-auto" midth="500" height="500" src="img/OutbreakTitle.png"
@@ -271,7 +277,7 @@
         <div class="row">
           <div class="col-lg-4">
             <h2 class="fw-normal">General Download</h2>
-            <p>Click this button if you're a general user interested in Outbreak Simulator for its basic purpose.</p>
+            <p>Click this button if you're a general user interested in trying Outbreak Simulator.</p>
             <p><a class="btn btn-secondary" href="download.html#download_all">Download &raquo;</a></p>
           </div>
           <div class="col-lg-4">
@@ -292,7 +298,7 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-1">
           <h2 class="featurette-heading fw-normal lh-1">Funding</h2>
-          <p class="lead">Thanks to the Science Education Partnership Award (SEPA) for providing funding for this project</p>
+          <p class="lead">Thanks to the Science Education Partnership Award (SEPA) and NSF (Tickbase grant number) for providing funding for this project</p>
         </div>
         <div class="col-md-5 order-md-2">
           <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/SEPALogo.png">
