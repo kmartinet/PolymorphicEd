@@ -95,6 +95,19 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
     </style>
 
 
@@ -169,6 +182,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
+              <!-- About dropdown -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About
@@ -177,10 +191,11 @@
                   <li><a class="dropdown-item" href="about.html">About Us</a></li>
                   <li><a class="dropdown-item" href="aboutos.html">About Outbreak Simulator</a></li>
                 </ul>
-              </li>
+              </li> <!-- End About dropdown -->
               <li class="nav-item">
                 <a class="nav-link" href="download.html">Download</a>
               </li>
+              <!-- Current page is Resources -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
               </li>
@@ -200,13 +215,53 @@
     <main>
       <div class="container marketing">
         <br></br>
-        <p class="h1 text-center">Under Construction!</p>
-        <p class="lead text-center">Come back later for educational resources related to our projects.</p>
+        <p class="h1 text-center">Resources Hub</p>
+        <p class="lead text-center">Welcome to our Resources Hub, where we help you plan your career path and simplify the complexities of infectious diseases. On this page, you'll find links to curated collections of careers, academic papers, web articles, and videos. Whether you're a student, researcher, healthcare professional, or curious learner, these resources provide a comprehensive understanding of disease mechanisms, modeling techniques, and public health strategies.</p>
+        <p class="lead text-center">Start your journey now and delve into STEMM (Science, Technology, Engineering, Math, and Medicine) careers and the science behind disease outbreaks with these accessible and engaging resources. <strong>Click an icon below to learn more.</strong></p>
       </div>
+
+      <!-- Specific Resource Icons -->
+      <div class="container marketing">
+        <!-- First row -->
+        <a href="STEMMcareers.html"><img src="img/CareersIcon.png" class="img-fluid mx-auto d-block" alt="STEMM Careers - two scientists wearing gloves shaking hands"></a>
+        <h2 class="fw-normal text-center"><a href="STEMMcareers.html">Explore STEMM Careers</h2></a>
+        <br></br>
+        <!-- Second row -->
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="infectious_disease.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/InfectiousDiseaseIcon.png" alt="Infectious Disease - two scientists pointing at graphs projected on a wall"></a>
+            <h2 class="fw-normal"><a href="infectious_disease.html">Learn About Infectious Disease</h2></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="disease_modeling.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/DiseaseModelingIcon.png" alt="Disease Modeling - a petri dish with SIR graphs behind it"></a>
+            <h2 class="fw-normal"><a href="disease_modeling.html">Learn About Disease Modeling</h2></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="public_health.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/PublicHealthIcon.png" alt="Public Health - a man in a suit giving a presentation with graphs behind him"></a>
+            <h2 class="fw-normal"><a href="public_health.html">Learn About Public Health</h2></a>
+          </div>
+        </div>
+        <!-- Third row -->
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="epidemiology.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/EpidemiologyIcon.png" alt="Epidemiology - a scientist in a lab coat putting on a mask"></a>
+            <h2 class="fw-normal"><a href="epidemiology.html">Learn About Epidemiology</h2></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="complex_systems.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/ComplexSystemsIcon.png" alt="Complex Systems - two sceintists discussing the maps projected behind them"></a>
+            <h2 class="fw-normal"><a href="complex_systems.html">Learn About Complex Systems</h2></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="pop_culture.html"><img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/PopCultureIcon.png" alt="Pop Culture - two green, decomposing zombies walking toward the viewer"></a>
+            <h2 class="fw-normal"><a href="pop_culture.html">Disease in Pop Culture</h2></a>
+          </div>
+        </div>
+      </div>
+
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2023 Polymorphic Games &middot; <a href="https://www.uidaho.edu/">University of Idaho</a> &middot; <a href="https://nihsepa.org/">SEPA</a> &middot; <a href="https://www.ucf.edu/">University of Central Florida</a></p>
+        <p>&copy; 2023-2024 Polymorphic Games &middot; <a href="https://www.uidaho.edu/">University of Idaho</a> &middot; <a href="https://nihsepa.org/">SEPA</a> &middot; <a href="https://www.ucf.edu/">University of Central Florida</a></p>
       </footer>
   </main>
   <script src="js/bootstrap.bundle.min.js"></script>

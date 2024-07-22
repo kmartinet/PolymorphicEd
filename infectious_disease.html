@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- Script for dark/light mode options -->
+    <script src="js/color-modes.js"></script>
+
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Information about the University of Idaho's SEPA project">
+    <meta name="author" content="Kristen Martinet (Polymorphic Games), Mark Otto (Bootstrap), Jacob Thornton (Bootstrap), and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Polymorphic Ed - Infectious Disease Resources</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Overwrite some styling -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #9ba0a2;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #9ba0a2;
+        --bs-btn-hover-border-color: #9ba0a2;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #6c757d;
+        --bs-btn-active-border-color: #6c757d;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+
+      .sp-warning {
+        color: red;
+      }
+    </style>
+
+
+    <!-- Custom styles for the carousel template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Grab SVGs for dark/light mode symbols -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <!-- Dark/Light mode dropdown -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Navbar -->
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Polymorphic Ed.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <!-- About dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="aboutos.html">About Outbreak Simulator</a></li>
+                </ul>
+              </li> <!-- End About dropdown -->
+              <li class="nav-item">
+                <a class="nav-link" href="download.html">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main body -->
+    <main>
+      <div class="container marketing">
+        <br></br>
+        <p class="h1 text-center">Infectious Disease</p>
+        <p class="lead text-center">On this page, you'll find several resources including videos, podcasts, news articles, and academic papers related to infectious diseases. Each resource includes a brief summary and recommended education level to help you decide which to click on.</p>
+        <!-- Videos Section -->
+         <!-- Get YT thumbnail using https://img.youtube.com/vi/<insert-youtube-video-id-here>/maxresdefault.jpg -->
+       <h2 class="mb-3 text-center">Videos and Podcasts</h2>
+       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+         <div class="col">
+           <div class="card h-100">
+             <div class="card-body">
+               <h5 class="card-title">Introduction to Infectious Disease Modeling</h5>
+               <img class = "img-fluid mx-auto" src="img/resourceimg/VideoTestThumb.png">
+               <p class="card-text">This course offers an in-depth introduction to the principles and techniques of infectious disease modeling. It covers various modeling approaches, including deterministic and stochastic models, to understand and predict the spread of infectious diseases. The course is designed for public health professionals, researchers, and college students, aiming to equip them with the essential tools to analyze disease dynamics and inform public health interventions.</p>
+               <p class="card-text">Recommended Education Level: Undergraduate +</p>
+               <a href="https://ccdd.hsph.harvard.edu/introduction-to-infectious-disease-modeling/" class="btn btn-primary" target="_blank">Watch Video</a>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Crash Course: Outbreak Science</h5>
+                <img class = "img-fluid mx-auto" src="img/resourceimg/CCOutbreak.png">
+                <p class="card-text">The Outbreak Science series produced by Crash Course provides an in-depth look at the science behind outbreaks and how public health professionals respond to them. Across 15 episodes, the series covers key topics such as epidemiology, disease transmission, outbreak investigation, and control measures. Designed to be accessible and informative, it aims to educate viewers about the complexities of managing infectious disease outbreaks and the importance of public health interventions.</p>
+                <p class="card-text">Recommended Education Level: High School +</p>
+                <a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtPkACD-BkU-oM6PUotjdCEk" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Crash Course: How Does Disease Move?</h5>
+                <img class = "img-fluid mx-auto" src="img/resourceimg/CCDiseaseMove.png">
+                <p class="card-text">In this episode of Crash Course Geography, the host discusses the movement of diseases and how they spread across different regions and populations. The episode explores the factors that influence disease transmission, including human behavior, environmental conditions, and global connectivity. It also discusses the role of geography in understanding and managing outbreaks, highlighting how maps and other geographic tools can help track and control the spread of infectious diseases.</p>
+                <p class="card-text">Recommended Education Level: Middle School +</p>
+                <a href="https://www.youtube.com/watch?v=DaHTOFphlMY" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Antibiotics, Antivirals, and Vaccines</h5>
+                <img class = "img-fluid mx-auto" src="img/resourceimg/AmoebaSistersThumb.png">
+                <p class="card-text">In this educational video, the hosts explain the differences between antibiotics, antivirals, and vaccines in a fun and engaging manner. The episode covers how antibiotics work to fight against bacterial infections, how antivirals help to manage viral infections, and the role of vaccines in preventing diseases by stimulating the immune system. The video aims to clarify common misconceptions and provides a clear understanding of how these medical interventions contribute to public health.</p>
+                <p class="card-text">Recommended Education Level: Middle School +</p>
+                <a href="https://www.youtube.com/watch?v=uVUf_pt7Sh0" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Infectious disease epidemiology and transmission dynamics (how infections spread)</h5>
+                <img class = "img-fluid mx-auto" src="img/resourceimg/InfectiousDiseaseEpidemiologyThumb.png">
+                <p class="card-text">This informative video explains the basics of infectious disease epidemiology and how infections spread. It covers key ideas like the basic reproduction number (R0), ways infections are transmitted, and factors that affect the spread of diseases. With clear explanations and engaging visuals, viewers learn about the mechanisms behind disease outbreaks and the importance of public health strategies in controlling infections.</p>
+                <p class="card-text">Recommended Education Level: High School +</p>
+                <a href="https://www.youtube.com/watch?v=V0TBsGckUYM" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Know how to interpret an epidemic curve?</h5>
+                <img class="img-fluid mx-auto" src="img/resourceimg/EpidemicCurveThumb.png" alt="Epidemic Curve Thumbnail">
+                <p class="card-text">This educational video explains how to interpret an epidemic curve, a crucial tool in epidemiology for understanding the progression of disease outbreaks. It covers the different phases of an epidemic, how to read and analyze the curve, the insights the curve provides about transmission dynamics, peak infection periods, and the effectiveness of public health interventions. Clear explanations and visual aids make this complex topic accessible to a wide audience.</p>
+                <p class="card-text">Recommended Education Level: 8th Grade +</p>
+                <a href="https://www.youtube.com/watch?v=7SM4PN7Yg1s" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Outbreaks - Investigation and Control</h5>
+                <img class="img-fluid mx-auto" src="img/resourceimg/OutbreakInvestigationControl.png" alt="Epidemic Curve Thumbnail">
+                <p class="card-text">This insightful video delves into the processes involved in investigating and controlling disease outbreaks. It covers the steps epidemiologists take to identify the source of an outbreak, track its spread, and implement measures to contain it. Topics include case identification, data collection, analysis of transmission patterns, and the application of public health interventions. Through clear explanations and practical examples, viewers learn the critical methods used to manage and mitigate outbreaks.</p>
+                <p class="card-text">Recommended Education Level: 8th Grade +</p>
+                <a href="https://www.youtube.com/watch?v=xqoaGhxrIfY" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Disease Origins & Transmission</h5>
+                <img class="img-fluid mx-auto" src="img/resourceimg/DiseaseOriginsThumb.png" alt="Disease Origins Thumbnail">
+                <p class="card-text">This PBS video explores the origins and transmission of diseases, shedding light on how infectious agents emerge and spread through populations. The program delves into the factors that contribute to disease outbreaks, including environmental changes, human behavior, and global travel. Expert interviews and scientific insights provide a comprehensive understanding of how diseases originate and the mechanisms behind their transmission, highlighting the importance of surveillance and public health measures in preventing and controlling outbreaks.</p>
+                <p class="card-text">Recommended Education Level: Middle School +</p>
+                <a href="https://www.pbs.org/video/emerging-science-disease-origins-transmission/" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">The Future of Infectious Diseases</h5>
+                <img class="img-fluid mx-auto" src="img/resourceimg/TEDPubHealthThumb.png" alt="Future of Infectious Diseases Thumbnail">
+                <p class="card-text">In this TEDx talk, Paul Cosford discusses the future of infectious diseases and the challenges and opportunities that lie ahead in combating them. He explores emerging threats, the impact of globalization and climate change on disease spread, and the importance of global cooperation and innovation in public health. Cosford emphasizes the need for preparedness, robust healthcare systems, and continuous research to effectively manage and prevent future infectious disease outbreaks.</p>
+                <p class="card-text">Recommended Education Level: High School +</p>
+                <a href="https://www.youtube.com/watch?v=qeSIJrmg7nU" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Pathogens in Pop Culture: Contagion, Outbreak, and Pathogen Response</h5>
+                <img class="img-fluid mx-auto" src="img/resourceimg/PathogensInPopCultureThumb.png" alt="Pathogens in Pop Culture Thumbnail">
+                <p class="card-text">In this episode of the “Transmission Interrupted” podcast series, the hosts explore the depiction of pathogens in popular films such as “Contagion” and “Outbreak.” They discuss how these movies represent pathogen response and the impact of such portrayals on public understanding of infectious diseases and emergency preparedness. The episode features expert insights into the accuracy of these cinematic depictions and their influence on public health awareness.</p>
+                <p class="card-text">Recommended Education Level: 10th Grade +</p>
+                <a href="https://netec.org/transmission-interrupted/pathogens-in-pop-culture-ep-iii-contagion-outbreak-and-pathogen-response/" class="btn btn-primary" target="_blank">Listen to Podcast</a>
+              </div>
+            </div>
+          </div> 
+         <!-- End last col div -->
+       </div>
+       <br></br>
+      <!-- SEPA Project section -->
+     <h2 class="mb-3 text-center">Other SEPA (Science Education Partnership Award) Projects</h2>
+     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The Great Diseases - Infectious Diseases</h5>
+            <img class = "img-fluid mx-auto" src="img/resourceimg/GreatDiseasesThumb.png">
+            <p class="card-text">"Infectious Diseases" is a unit within "The Great Diseases" curriculum module offered by Tufts University, and is aimed at teaching middle and high school students about the complexities of infectious diseases. This module covers the biology of pathogens, the mechanisms of disease transmission, the body’s defense mechanisms, and public health strategies to control infectious diseases.</p>
+            <p class="card-text">Recommended Education Level: Middle School +</p>
+            <a href="https://sites.tufts.edu/ctse/great-diseases/infectious-diseases/" class="btn btn-primary" target="_blank">Visit Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+         <div class="card h-100">
+           <div class="card-body">
+             <h5 class="card-title">It's Contagious! Promoting the Biomedical Workforce Pipeline through Infectious Diseases</h5>
+             <img class = "img-fluid mx-auto" src="img/resourceimg/ItsContagiousThumb.png">
+             <p class="card-text">“It's Contagious! Promoting the Biomedical Workforce Pipeline through Infectious Diseases” is an educational resource that aims to engage students in learning about infectious diseases and to inspire interest in biomedical careers. The curriculum includes interactive lessons and activities designed to enhance understanding of the science behind infectious diseases and the importance of the biomedical workforce.</p>
+             <p class="card-text">Recommended Education Level: Middle School +</p>
+             <a href="https://www.txbiomed.org/education-outreach/educational-resources/curricular-units/" class="btn btn-primary" target="_blank">Visit Site</a>
+           </div>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card h-100">
+           <div class="card-body">
+             <h5 class="card-title">Epidemiology and the Energy Balance Equation</h5>
+             <img class = "img-fluid mx-auto" src="img/resourceimg/EnergyBalanceThumb.png">
+             <p class="card-text">This educational resource offers a comprehensive curriculum focused on teaching students the principles of epidemiology, specifically in relation to energy balance, nutrition, and physical activity. It aims to deepen students' understanding of how epidemiological methods are applied to investigate the connections between lifestyle factors and health outcomes.</p>
+             <p class="card-text">Recommended Education Level: Middle School +</p>
+             <a href="http://www.teachepidemiology.org/EEBE.html" class="btn btn-primary" target="_blank">Visit Site</a>
+           </div>
+         </div>
+       </div>
+      <!-- End last col div -->
+    </div>
+    <br></br>
+       <!-- Articles section -->
+       <h2 class="mb-3 text-center">Articles</h2>
+       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Most Common Infectious Diseases in the U.S.</h5>
+              <img class = "img-fluid mx-auto" src="img/resourceimg/WebMDThumb.png">
+              <p class="card-text">This informative slideshow from WebMD provides an overview of the most common infectious diseases in the United States. The presentation covers a range of diseases, from the flu to more serious infections like tuberculosis. Each slide offers images of symptoms and key information about transmission, prevention, and treatment. The slideshow presents information in a concise manner to help viewers understand how these diseases impact public health and what measures can be taken to reduce their spread.</p>
+              <p class="card-text">Recommended Education Level: Middle School +</p>
+              <p class="card-text sp-warning">Warning: Images depicting symptoms of the infectious diseases are included. May be considered graphic and upsetting to some users.</p>
+              <a href="https://www.webmd.com/a-to-z-guides/ss/slideshow-most-common-infectious-diseases-in-us" class="btn btn-primary" target="_blank">Read Article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+           <div class="card h-100">
+             <div class="card-body">
+               <h5 class="card-title">Disease Outbreaks</h5>
+               <img class = "img-fluid mx-auto" src="img/resourceimg/WHOThumb.png">
+               <p class="card-text">This comprehensive page from the World Health Organization (WHO) focuses on disease outbreaks and their impact on global health. It provides detailed information on current and past outbreaks, the factors that contribute to their spread, and the strategies used to manage and control them. The page also highlights the role of WHO in coordinating international responses, promoting preparedness, and supporting countries in their efforts to mitigate the effects of outbreaks.</p>
+               <p class="card-text">Recommended Education Level: Middle School +</p>
+               <a href="https://www.who.int/teams/environment-climate-change-and-health/emergencies/disease-outbreaks" class="btn btn-primary" target="_blank">Read Article</a>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card h-100">
+             <div class="card-body">
+               <h5 class="card-title">Methods of Disease Transmission</h5>
+               <img class = "img-fluid mx-auto" src="img/resourceimg/NatGeoThumb.png">
+               <p class="card-text">This educational infographic shows how diseases spread. It explains different ways infections are passed on, like through direct contact, the air, and by insects. The graphic gives clear examples and explanations, helping readers understand how diseases move from one person to another and how to prevent them.</p>
+               <p class="card-text">Recommended Education Level: 5th Grade +</p>
+               <a href="https://education.nationalgeographic.org/resource/methods-disease-transmission/" class="btn btn-primary" target="_blank">Read Infographic</a>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">What You Need to Know About Infectious Disease</h5>
+              <img class = "img-fluid mx-auto" src="img/resourceimg/NeedtoKnowThumb.png">
+              <p class="card-text">This article explores how infections happen, explaining how pathogens invade the body, grow, and cause illness. The author talks about the roles of bacteria, viruses, fungi, and parasites in infections and describes how the body’s immune system responds to these invaders. This page gives a clear and engaging overview of the biological and physical aspects of infection, making complex ideas easy to understand for readers.</p>
+              <p class="card-text">Recommended Education Level: 7th Grade +</p>
+              <a href="https://www.ncbi.nlm.nih.gov/books/NBK209710/" class="btn btn-primary" target="_blank">Read Article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Epidemic, Endemic, Pandemic: What are the Differences?</h5>
+              <img class="img-fluid mx-auto" src="img/resourceimg/EpiEndPan.png" alt="Epidemic, Endemic, Pandemic Thumbnail">
+              <p class="card-text">This article explains the key differences between epidemics, endemics, and pandemics. It provides clear definitions and examples of each term, illustrating how diseases can vary in scope and impact. It also discusses the factors that influence the classification of disease outbreaks and the public health responses required to manage them.</p>
+              <p class="card-text">Recommended Education Level: Middle School +</p>
+              <a href="https://www.publichealth.columbia.edu/news/epidemic-endemic-pandemic-what-are-differences" class="btn btn-primary" target="_blank">Read Article</a>
+            </div>
+          </div>
+        </div>        
+        <!-- End last col div -->
+      </div>
+      <br></br>
+      <!-- Academic Papers section -->
+      <h2 class="mb-3 text-center">Academic Papers</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+       <div class="col">
+         <div class="card h-100">
+           <div class="card-body">
+             <h5 class="card-title">A systems approach to infectious disease</h5>
+             <p class="card-text">This article highlights how systems biology can enhance our understanding of infectious diseases. By integrating various data sources, the authors demonstrate how this approach can uncover pathogen-host interactions, identify new drug targets, and improve disease prediction and treatment strategies.</p>
+             <p class="card-text">Recommended Education Level: Undergraduate +</p>
+             <a href="https://pubmed.ncbi.nlm.nih.gov/32060427/" class="btn btn-primary" target="_blank">Read Paper</a>
+           </div>
+         </div>
+       </div>
+       <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Principles of Infectious Diseases: Transmission, Diagnosis, Prevention, and Control</h5>
+              <p class="card-text">This article provides an in-depth look at the key principles of infectious diseases, covering how they spread, how they are diagnosed, and the methods used to prevent and control them. The author explains the ways infectious agents move from one host to another, the techniques used to detect infections, and the strategies to stop outbreaks. This article is a valuable resource for researchers, healthcare professionals, and students interested in infectious diseases and public health.</p>
+              <p class="card-text">Recommended Education Level: High School +</p>
+              <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7150340/" class="btn btn-primary" target="_blank">Read Paper</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Infectious Diseases in Cinema: Virus Hunters and Killer Microbes</h5>
+              <p class="card-text">This article examines the portrayal of infectious diseases in cinema, focusing on how movies depict virus hunters and killer microbes. The authors analyze various films to explore how these representations influence public perception and understanding of infectious diseases. The article discusses the accuracy of these portrayals, their impact on public health awareness, and the role of cinema in educating and engaging audiences about real-life epidemiological challenges.</p>
+              <p class="card-text">Recommended Education Level: High School +</p>
+              <a href="https://academic.oup.com/cid/article/37/7/939/422604" class="btn btn-primary" target="_blank">Read Paper</a>
+            </div>
+          </div>
+        </div>
+       <!-- End last col div -->
+     </div>
+     <br></br>
+    </div>
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2023-2024 Polymorphic Games &middot; <a href="https://www.uidaho.edu/">University of Idaho</a> &middot; <a href="https://nihsepa.org/">SEPA</a> &middot; <a href="https://www.ucf.edu/">University of Central Florida</a></p>
+      </footer>
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
