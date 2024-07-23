@@ -30,7 +30,7 @@ $careers = [
             'Johns Hopkins University: Johns Hopkins Careers' => 'https://jobs.jhu.edu/',
             'National Institutes of Health (NIH): NIH Careers' => 'https://jobs.nih.gov/'
         ],
-        'image' => 'img/careers/Bacteria_collage.JPG',
+        'image' => 'img/careers/Bacteria_collage.jpg',
         'imgSource' => [
           'link' => 'https://en.wikipedia.org/wiki/Bacteriologist#/media/File:Bacteria_collage.jpg',
           'text' => 'Wikipedia'
